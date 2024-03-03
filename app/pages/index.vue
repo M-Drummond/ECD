@@ -1,6 +1,18 @@
 <template>
   <section class="home">
-    <div class="py-24 md:py-36 mx-auto flex flex-wrap flex-col md:flex-row items-center">
+    <h1>ERIC DRUMMOND INFLATABLE BOAT REPAIR</h1>
+    <p>
+      Based in Mona Vale and Servicing the Northern Beaches and the Greater Sydney Area, Eric
+      Drummond Inflatable Boat Repairs specialises in repairs and servicing of all inflatables
+      including:
+    </p>
+    <ul>
+      <li>Surf Rescue and IRBs</li>
+      <li>Recreational Watercraft</li>
+      <li>Stand Up Paddle Boards</li>
+      <li>Rescue Craft</li>
+    </ul>
+    <!-- <div class="py-24 md:py-36 mx-auto flex flex-wrap flex-col md:flex-row items-center">
       <div class="flex flex-col w-full xl:w-3/5 justify-center lg:items-start overflow-y-hidden">
         <div v-html="$md.render(welcomeText)" class="home__welcome markdown" />
 
@@ -40,9 +52,31 @@
           src="https://source.unsplash.com/random/720x400"
         />
       </div>
-    </div>
+    </div> -->
   </section>
 </template>
+
+<style scoped>
+h1 {
+  font-size: 32px;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+p,
+ul {
+  line-height: 2.25rem;
+}
+
+p {
+  max-width: 320px;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 1.25rem;
+}
+</style>
 
 <script lang="ts">
 import { Component, Vue } from 'nuxt-property-decorator';
