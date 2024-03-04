@@ -1,12 +1,17 @@
 <template>
   <header
-    class="flex items-center py-4 md:py-8 px-4 xl:px-0 bg-opacity-25"
-    style="background-image: url('/images/uploads/ripples.png');"
+    class="flex items-center py-4 md:py-8 px-4 xl:px-0 bg-opacity-25 relative z-10 shadow-md bg-white w-screen"
   >
-    <div class="header__logo pl-4">
-      <nuxt-link to="/">
-        <!-- <img :src="logo" alt="Logo" /> -->
-        ECD Inflatables
+    <div class="header__logo pl-4 relative">
+      <nuxt-link to="/" class="flex flex-row space-x-4 reative py-4 group">
+        <img
+          src="/images/uploads/irb-vector.svg"
+          alt="background image"
+          loading="lazy"
+          class="z-10 block w-12 h-12 absolute inset-0 w-full h-full opacity-10"
+          style="transform: scaleX(-1);"
+        />
+        Eric Drummond Inflatable Boat Repair
       </nuxt-link>
     </div>
 
@@ -52,5 +57,14 @@ export default class Header extends Vue {
       @apply font-bold;
     }
   }
+}
+
+.header__logo img {
+  opacity: 0.125;
+  transition: 0.25s ease-in opacity;
+}
+
+.header__logo:hover img {
+  opacity: 0.0125;
 }
 </style>

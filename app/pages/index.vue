@@ -1,74 +1,122 @@
 <template>
-  <section class="home">
-    <h1>ERIC DRUMMOND INFLATABLE BOAT REPAIR</h1>
+  <div>
+    <section class="home">
+      <h1>ERIC DRUMMOND INFLATABLE BOAT REPAIR</h1>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 md:gap-8">
-      <div>
-        <p>
-          Based in Mona Vale and Servicing the Northern Beaches and the Greater Sydney Area, Eric
-          Drummond Inflatable Boat Repairs specialises in repairs and servicing of all inflatables
-          including:
-        </p>
-        <ul>
-          <li>Surf Rescue and IRBs</li>
-          <li>Recreational Watercraft</li>
-          <li>Stand Up Paddle Boards</li>
-          <li>Rescue Craft</li>
-        </ul>
-      </div>
-      <div class="w-full">
-        <img
-          src="/images/uploads/hero.jpg"
-          class="w-full h-auto mb-8"
-          alt="Eric Drummond Inflatable Boat Repair"
-        />
-      </div>
-    </div>
-    <!-- <div class="py-24 md:py-36 mx-auto flex flex-wrap flex-col md:flex-row items-center">
-      <div class="flex flex-col w-full xl:w-3/5 justify-center lg:items-start overflow-y-hidden">
-        <div v-html="$md.render(welcomeText)" class="home__welcome markdown" />
-
-        <div class="mb-12 xl:mb-0">
-          <h4 v-if="isSignedUp">Thank you - we'll be in touch shortly.</h4>
-
-          <form
-            v-else
-            @submit.prevent="handleSubmit"
-            name="signups"
-            netlify
-            class="flex items-center border-b border-b-2 border-blue-400 py-2"
-          >
-            <input
-              ref="emailInput"
-              v-model="form.email"
-              class="appearance-none mb-36 bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
-              type="text"
-              name="email"
-              placeholder="your@email.com"
-              aria-label="Email address"
-            />
-
-            <button
-              class="flex-shrink-0 bg-blue-500 hover:bg-blue-700 border-blue-500 hover:border-blue-700 text-sm border-4 text-white py-1 px-2 rounded"
-              type="submit"
-            >
-              Sign Up
-            </button>
-          </form>
+      <div class="py-24 md:py-36 grid grid-cols-1 md:grid-cols-2 md:gap-8">
+        <div class="flex flex-col justify-center markdown">
+          <h2>About</h2>
+          <p>
+            Based in Mona Vale and Servicing the Northern Beaches and the Greater Sydney Area, Eric
+            Drummond Inflatable Boat Repairs specialises in repairs and servicing of all inflatables
+            including:
+          </p>
+          <ul>
+            <li>Surf Rescue and IRBs</li>
+            <li>Recreational Watercraft</li>
+            <li>Stand Up Paddle Boards</li>
+            <li>Surf and Marine Rescue Craft</li>
+          </ul>
+        </div>
+        <div class="w-full">
+          <img
+            src="/images/uploads/hero.jpg"
+            class="w-full h-auto mb-8"
+            alt="Eric Drummond Inflatable Boat Repair"
+          />
         </div>
       </div>
-      <div class="flex flex-col w-full xl:w-2/5">
-        <img
-          alt="Hero"
-          class="rounded shadow-xl"
-          src="https://source.unsplash.com/random/720x400"
-        />
+      <div class="py-24 md:py-36 mx-auto grid grid-cols-1 md:grid-cols-2 md:gap-8">
+        <div class="flex flex-col w-full">
+          <img
+            alt="Secondary Image"
+            class="rounded shadow-xl"
+            src="/images/uploads/melges.jpg"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="flex flex-col w-full justify-center lg:items-start overflow-y-hidden">
+          <div v-html="$md.render(welcomeText)" class="home__welcome markdown" />
+
+          <div class="mb-12 xl:mb-0 w-full">
+            <h4 v-if="isSignedUp">Thank you - we'll be in touch shortly.</h4>
+
+            <form
+              v-else
+              @submit.prevent="handleSubmit"
+              name="signups"
+              netlify
+              class="flex items-center border-b border-b-2 border-blue-400 py-2"
+            >
+              <input
+                ref="emailInput"
+                v-model="form.email"
+                class="appearance-none mb-36 bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
+                type="text"
+                name="email"
+                placeholder="your@email.com"
+                aria-label="Email address"
+              />
+
+              <button
+                class="bg-gray-400 hover:bg-gray-300 hover:underline py-2 px-4 uppercase inline-block my-4"
+                type="submit"
+              >
+                Send
+              </button>
+            </form>
+          </div>
+        </div>
       </div>
-    </div> -->
-  </section>
+    </section>
+    <section id="gallery" class="py-24 md:py-36">
+      <div class="markdown">
+        <h2>Gallery</h2>
+      </div>
+      <div class="grid gap-8 grid-cols-2 md:grid-cols-4">
+        <picture>
+          <a href="/images/uploads/1.jpg" class="contents">
+            <img src="/images/uploads/1.jpg" alt="gallery image" loading="lazy" />
+            <span class="sr-only">Gallery Image - Inflatable Boat</span>
+          </a>
+        </picture>
+        <picture>
+          <a href="/images/uploads/2.jpg" class="contents">
+            <img src="/images/uploads/2.jpg" alt="gallery image" loading="lazy" />
+            <span class="sr-only">Gallery Image - Inflatable Boat</span>
+          </a>
+        </picture>
+        <picture>
+          <a href="/images/uploads/3.jpg" class="contents">
+            <img src="/images/uploads/3.jpg" alt="gallery image" loading="lazy" />
+            <span class="sr-only">Gallery Image - Inflatable Boat</span>
+          </a>
+        </picture>
+        <picture>
+          <a href="/images/uploads/4.jpg" class="contents">
+            <img src="/images/uploads/4.jpg" alt="gallery image" loading="lazy" />
+            <span class="sr-only">Gallery Image - Inflatable Boat</span>
+          </a>
+        </picture>
+      </div>
+    </section>
+    <img
+      src="/images/uploads/irb-vector.svg"
+      alt="background image"
+      loading="lazy"
+      class="fixed inset-0 z-0"
+      style="opacity: 0.05;"
+    />
+  </div>
 </template>
 
 <style scoped>
+section {
+  position: relative;
+  z-index: 10;
+}
+
 h1 {
   font-size: 32px;
   margin-bottom: 2rem;
@@ -95,12 +143,6 @@ ul {
 import { Component, Vue } from 'nuxt-property-decorator';
 import settings from '@/content/settings/general.json';
 
-@Component({
-  // Called to know which transition to apply
-  transition() {
-    return 'slide-left';
-  },
-})
 export default class Home extends Vue {
   welcomeText = settings.welcomeText;
 

@@ -17,7 +17,7 @@
     </main>
     <div
       style="background-image: url('/images/uploads/ripples.png');"
-      class="grid footer-cols grid-cols-1 md:grid-cols-3 px-4 py-8 mt-8"
+      class="grid footer-cols grid-cols-1 md:grid-cols-3 px-4 py-8 mt-8 relative z-10"
     >
       <div>
         <h4>Contact</h4>
