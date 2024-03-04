@@ -1,6 +1,9 @@
 <template>
-  <header class="flex items-center py-4 md:py-8">
-    <div class="header__logo">
+  <header
+    class="flex items-center py-4 md:py-8 px-4 xl:px-0 bg-opacity-25"
+    style="background-image: url('/images/uploads/ripples.png');"
+  >
+    <div class="header__logo pl-4">
       <nuxt-link to="/">
         <!-- <img :src="logo" alt="Logo" /> -->
         ECD Inflatables

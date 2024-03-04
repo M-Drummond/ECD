@@ -3,12 +3,13 @@
 body {
   @apply antialiased;
   @apply subpixel-antialiased;
+  
 }
 
 .main {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+  // display: flex;
+  // flex-direction: column;
+  // min-height: 100vh;
   // justify-content: start;
 }
 
@@ -31,4 +32,13 @@ body {
 .slide-right-enter {
   opacity: 0;
   transform: translate(0, 0);
+}
+
+
+
+.roboto-slab-regular {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 400; 
+  font-style: normal;
 }

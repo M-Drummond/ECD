@@ -1,6 +1,6 @@
 <template>
   <footer class="footer -mx-4 md:mx-0">
-    <div class="container mx-auto pb-6 flex justify-center">
+    <div class="container mx-auto py-6 flex justify-center">
       &copy; 2024 ECD Inflatables
     </div>
   </footer>
@@ -15,6 +15,6 @@ export default class Footer extends Vue {}
 
 <style lang="scss">
 .footer {
-  background-color: #eee;
+  background-color: #fffafa;
 }
 </style>

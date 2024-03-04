@@ -1,17 +1,29 @@
 <template>
   <section class="home">
     <h1>ERIC DRUMMOND INFLATABLE BOAT REPAIR</h1>
-    <p>
-      Based in Mona Vale and Servicing the Northern Beaches and the Greater Sydney Area, Eric
-      Drummond Inflatable Boat Repairs specialises in repairs and servicing of all inflatables
-      including:
-    </p>
-    <ul>
-      <li>Surf Rescue and IRBs</li>
-      <li>Recreational Watercraft</li>
-      <li>Stand Up Paddle Boards</li>
-      <li>Rescue Craft</li>
-    </ul>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 md:gap-8">
+      <div>
+        <p>
+          Based in Mona Vale and Servicing the Northern Beaches and the Greater Sydney Area, Eric
+          Drummond Inflatable Boat Repairs specialises in repairs and servicing of all inflatables
+          including:
+        </p>
+        <ul>
+          <li>Surf Rescue and IRBs</li>
+          <li>Recreational Watercraft</li>
+          <li>Stand Up Paddle Boards</li>
+          <li>Rescue Craft</li>
+        </ul>
+      </div>
+      <div class="w-full">
+        <img
+          src="/images/uploads/hero.jpg"
+          class="w-full h-auto mb-8"
+          alt="Eric Drummond Inflatable Boat Repair"
+        />
+      </div>
+    </div>
     <!-- <div class="py-24 md:py-36 mx-auto flex flex-wrap flex-col md:flex-row items-center">
       <div class="flex flex-col w-full xl:w-3/5 justify-center lg:items-start overflow-y-hidden">
         <div v-html="$md.render(welcomeText)" class="home__welcome markdown" />
@@ -61,6 +73,7 @@ h1 {
   font-size: 32px;
   margin-bottom: 2rem;
   text-align: center;
+  font-weight: 900;
 }
 
 p,
@@ -69,7 +82,7 @@ ul {
 }
 
 p {
-  max-width: 320px;
+  max-width: 767px;
 }
 
 ul {
