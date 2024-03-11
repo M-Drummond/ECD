@@ -20,10 +20,10 @@
             <li>Al other inflatable products</li>
           </ul>
         </div>
-        <div class="w-full">
+        <div class="w-full flex flex-col items-center justify-center mb-8 md:mb-0">
           <img
                src="/images/uploads/hero.jpg"
-               class="w-full h-auto mb-8"
+               class="w-full h-auto mb-"
                alt="Eric Drummond Inflatable Boat Repair" />
         </div>
       </div>
