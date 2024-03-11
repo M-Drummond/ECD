@@ -16,16 +16,14 @@
       </div>
     </main>
     <div
-      style="background-image: url('/images/uploads/ripples.png');"
-      class="grid footer-cols grid-cols-1 md:grid-cols-3 px-4 py-8 mt-8 relative z-10"
-    >
+         style="background-image: url('/images/uploads/ripples.png');"
+         class="grid footer-cols grid-cols-1 md:grid-cols-3 px-4 py-8 mt-8 relative z-10">
       <div>
         <h4>Contact</h4>
         <div>
           <a
-            class="bg-gray-400 hover:bg-gray-300 hover:underline p-8 uppercase inline-block my-4"
-            href="tel:0412 829 262"
-          >
+             class="bg-gray-400 hover:bg-gray-300 hover:underline p-8 uppercase inline-block my-4"
+             href="tel:0412 829 262">
             Call Now
           </a>
           <a class="block" href="tel:0412 829 262">0412 829 262</a>
@@ -35,9 +33,8 @@
         <h4>Address</h4>
         <div>
           <a
-            class="bg-gray-400 hover:bg-gray-300 hover:underline p-8 uppercase inline-block my-4"
-            href="https://www.google.com/maps/dir//ERIC+DRUMMOND+INFLATABLE+BOAT+REPAIR/data=!4m8!4m7!1m0!1m5!1m1!1s0x6b0d54a4cd16508f:0x454ab0dd19d5f4ee!2m2!1d151.311421!2d-33.6794363"
-          >
+             class="bg-gray-400 hover:bg-gray-300 hover:underline p-8 uppercase inline-block my-4"
+             href="https://www.google.com/maps/dir//ERIC+DRUMMOND+INFLATABLE+BOAT+REPAIR/data=!4m8!4m7!1m0!1m5!1m1!1s0x6b0d54a4cd16508f:0x454ab0dd19d5f4ee!2m2!1d151.311421!2d-33.6794363">
             Get Directions
           </a>
           <address>
@@ -54,7 +51,7 @@
             Monday - Friday : 9:00am - 5:00pm
           </li>
           <li>
-            Saturday : 9:00am - 12:00pm
+            Saturday : Closed, appointments available.
           </li>
           <li>
             Sunday : Closed, appointments available.
