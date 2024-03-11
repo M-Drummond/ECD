@@ -14,26 +14,26 @@
           <ul>
             <li>Surf Rescue and IRBs</li>
             <li>Recreational Watercraft</li>
+            <li>Inflatable Kayaks</li>
             <li>Stand Up Paddle Boards</li>
             <li>Surf and Marine Rescue Craft</li>
+            <li>Al other inflatable products</li>
           </ul>
         </div>
         <div class="w-full">
           <img
-            src="/images/uploads/hero.jpg"
-            class="w-full h-auto mb-8"
-            alt="Eric Drummond Inflatable Boat Repair"
-          />
+               src="/images/uploads/hero.jpg"
+               class="w-full h-auto mb-8"
+               alt="Eric Drummond Inflatable Boat Repair" />
         </div>
       </div>
       <div class="py-24 md:py-36 mx-auto grid grid-cols-1 md:grid-cols-2 md:gap-8">
         <div class="flex flex-col w-full">
           <img
-            alt="Secondary Image"
-            class="rounded shadow-xl"
-            src="/images/uploads/melges.jpg"
-            loading="lazy"
-          />
+               alt="Secondary Image"
+               class="rounded shadow-xl"
+               src="/images/uploads/melges.jpg"
+               loading="lazy" />
         </div>
 
         <div class="flex flex-col w-full justify-center lg:items-start overflow-y-hidden">
@@ -43,26 +43,23 @@
             <h4 v-if="isSignedUp">Thank you - we'll be in touch shortly.</h4>
 
             <form
-              v-else
-              @submit.prevent="handleSubmit"
-              name="signups"
-              netlify
-              class="flex items-center border-b border-b-2 border-blue-400 py-2"
-            >
+                  v-else
+                  @submit.prevent="handleSubmit"
+                  name="signups"
+                  netlify
+                  class="flex items-center border-b border-b-2 border-blue-400 py-2">
               <input
-                ref="emailInput"
-                v-model="form.email"
-                class="appearance-none mb-36 bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
-                type="text"
-                name="email"
-                placeholder="your@email.com"
-                aria-label="Email address"
-              />
+                     ref="emailInput"
+                     v-model="form.email"
+                     class="appearance-none mb-36 bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
+                     type="text"
+                     name="email"
+                     placeholder="your@email.com"
+                     aria-label="Email address" />
 
               <button
-                class="bg-gray-400 hover:bg-gray-300 hover:underline py-2 px-4 uppercase inline-block my-4"
-                type="submit"
-              >
+                      class="bg-gray-400 hover:bg-gray-300 hover:underline py-2 px-4 uppercase inline-block my-4"
+                      type="submit">
                 Send
               </button>
             </form>
@@ -102,12 +99,11 @@
       </div>
     </section>
     <img
-      src="/images/uploads/irb-vector.svg"
-      alt="background image"
-      loading="lazy"
-      class="fixed inset-0 z-0"
-      style="opacity: 0.05;"
-    />
+         src="/images/uploads/irb-vector.svg"
+         alt="background image"
+         loading="lazy"
+         class="fixed inset-0 z-0"
+         style="opacity: 0.05;" />
   </div>
 </template>
 
