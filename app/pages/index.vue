@@ -102,7 +102,7 @@
          src="/images/uploads/irb-vector.svg"
          alt="background image"
          loading="lazy"
-         class="fixed inset-0 z-0"
+         class="fixed top-auto bottom-0 left-0 right-0 z-0"
          style="opacity: 0.05;" />
   </div>
 </template>
