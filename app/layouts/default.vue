@@ -17,7 +17,7 @@
     </main>
 
     <section>
-      <div class="container mx-auto markdown">
+      <div class="container mx-auto markdown px-4 md:px-0">
         <p class="text-sm mt-4 mb-0 uppercase">Map</p>
         <h2>Mona Vale, Sydney Location</h2>
       </div>
