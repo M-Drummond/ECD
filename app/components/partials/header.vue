@@ -1,14 +1,16 @@
 <template>
   <header
-          class="flex items-center py-4 md:py-8 px-4 xl:px-0 bg-opacity-25 relative z-10 shadow-md bg-white w-screen">
+    class="flex items-center py-4 md:py-8 px-4 xl:px-0 bg-opacity-25 relative z-10 shadow-md bg-white w-screen"
+  >
     <div class="header__logo pl-4 relative">
       <nuxt-link to="/" class="flex flex-row space-x-4 reative py-4 group">
         <img
-             src="/images/uploads/irb-vector.svg"
-             alt="background image"
-             loading="lazy"
-             class="z-10 block w-12 h-12 absolute inset-0 w-full h-full opacity-10"
-             style="transform: scaleX(-1);" />
+          src="/images/uploads/irb-vector.svg"
+          alt="background image"
+          loading="lazy"
+          class="z-10 block w-12 h-12 absolute inset-0 w-full h-full opacity-10"
+          style="transform: scaleX(-1);"
+        />
         Eric Drummond Inflatable Boat Repair
       </nuxt-link>
     </div>
@@ -49,7 +51,7 @@ export default class Header extends Vue {
 
 <style lang="scss">
 .nav {
-  ul li>a {
+  ul li > a {
     &.nuxt-link-active {
       color: $bluise;
       @apply font-bold;
