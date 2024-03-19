@@ -8,10 +8,10 @@
       <polygon stroke="none" stroke-width="0" fill="#efefef" points="0,0.6 0,1 10,1 10,0" />
     </svg> -->
 
-    <main :class="[$route.name]" class="main relative z-10 px-4 md:px-0 mt-0 mb-auto">
+    <main :class="[$route.name]" class="main relative z-10 mt-0 mb-auto">
       <site-header />
       <div class="h-4 md:h-6"></div>
-      <div class="container mx-auto">
+      <div class="container mx-auto px-4 md:px-0">
         <nuxt class="nuxt" />
       </div>
     </main>
