@@ -1,7 +1,7 @@
 <template>
   <header
-    style="background-color: #fff;"
-    class="flex items-center justify-center py-4 md:py-8 px-4 xl:px-0 bg-opacity-25 relative z-20 bg-white w-screen"
+    style="background-color: #2c5282;"
+    class="flex items-center justify-center py-4 md:py-8 px-4 xl:px-0 bg-opacity-25 relative z-20 bg-blue-800 text-white w-screen"
   >
     <div class="header__logo pl-4 relative">
       <nuxt-link
@@ -56,6 +56,7 @@ export default class Header extends Vue {
 <style lang="scss">
 header {
   box-shadow: 0 2px 1px 0px rgba(0, 0, 0, 0.125);
+  letter-spacing: 0.125rem;
 }
 
 .nav {
