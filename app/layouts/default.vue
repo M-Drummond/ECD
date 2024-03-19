@@ -1,5 +1,5 @@
 <template>
-  <div class="overflow-x-hidden roboto-slab-regular">
+  <div class="overflow-x-hidden roboto-slab-regular" style="background-color: #f7f9ff;">
     <!-- <svg
       class="divider absolute z-0 sm:mx-0 transform rotate-180 mt-0 mb-auto w-full"
       width="100%"
@@ -65,7 +65,8 @@
 
 <style scoped>
 .footer-cols {
-  background: #efefef;
+  border-top: 1px solid navy;
+  background: #fff;
 }
 
 h4 {

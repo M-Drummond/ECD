@@ -1,11 +1,12 @@
 <template>
   <div>
     <section class="home">
-      <h1>ERIC DRUMMOND INFLATABLE BOAT REPAIR</h1>
-
-      <div class="py-24 md:py-36 grid grid-cols-1 md:grid-cols-2 md:gap-8">
+      <div class="py-24 md:py-0 md:pb-24 grid grid-cols-1 md:grid-cols-2 md:gap-8">
         <div class="flex flex-col justify-center markdown">
-          <h2>About</h2>
+          <p class="text-sm mt-4 mb-0">
+            ABOUT
+          </p>
+          <h1>ERIC DRUMMOND INFLATABLE BOAT REPAIR</h1>
           <p>
             Based in Mona Vale and Servicing the Northern Beaches and the Greater Sydney Area, Eric
             Drummond Inflatable Boat Repairs specialises in repairs and servicing of all inflatables
@@ -121,8 +122,8 @@ section {
 
 h1 {
   font-size: 32px;
+  margin-top: 0;
   margin-bottom: 2rem;
-  text-align: center;
   font-weight: 900;
 }
 

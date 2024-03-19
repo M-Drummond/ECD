@@ -15,7 +15,8 @@ export default class Footer extends Vue {}
 
 <style lang="scss">
 .footer {
-  background-color: #dddddd;
+  background-color: #fff;
+  border-top: 1px solid navy;
   position: relative;
   z-index: 10;
 }
