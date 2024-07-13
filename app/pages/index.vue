@@ -18,7 +18,7 @@
             <li>Inflatable Kayaks</li>
             <li>Stand Up Paddle Boards</li>
             <li>Surf and Marine Rescue Craft</li>
-            <li>Al other inflatable products</li>
+            <li>All other inflatable products</li>
           </ul>
         </div>
         <div class="w-full flex flex-col items-center justify-center mb-8 md:mb-0">
