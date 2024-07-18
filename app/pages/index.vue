@@ -234,7 +234,7 @@ export default class Home extends Vue {
       });
 
 
-      
+      this.$refs.emailInput.value = ""
       this.formMessage = "Thank you for getting in touch."
       
     } catch (error) {
