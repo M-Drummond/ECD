@@ -43,7 +43,7 @@
           <div v-html="$md.render(welcomeText)" class="home__welcome markdown" />
 
           <div class="mb-12 xl:mb-0 w-full">
-            <h4 v-if="isSignedUp || isSubmitted">Thank you - we'll be in touch shortly.</h4>
+            <h4 v-if="isSignedUp">Thank you - we'll be in touch shortly.</h4>
             
             <form
               v-else
@@ -103,7 +103,7 @@ s              class="flex flex-col items-start border-solid border-b-2 border-b
                 Send
               </button>
               
-              <p class="p-3 border-green-200" v-text="formMessage" v-if="isSignedUp"></p>
+              <p class="p-3 border-green-200" v-text="formMessage" v-if="isSubmitted"></p>
               
             </form>
           </div>
@@ -233,12 +233,14 @@ export default class Home extends Vue {
         body: this.encode({ 'form-name': 'signups', ...this.form }),
       });
 
-      this.isSignedUp = true;
+
       
       this.formMessage = "Thank you for getting in touch."
       
     } catch (error) {
       console.error(error);
+    } finally {
+      this.isSignedUp = true;
     }
   }
 }
