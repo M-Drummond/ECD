@@ -217,6 +217,8 @@ export default class Home extends Vue {
 
   async handleSubmit(): Promise<void> {
     
+    console.log( this )
+    
     this.isSubmitted = true
     
     if (!this.validEmail(this.form.email) ) {
