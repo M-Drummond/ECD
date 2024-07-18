@@ -76,13 +76,13 @@ s              class="flex flex-col items-start border-solid border-b-2 border-b
               
               <label class="mb-2">Phone</label>
               <input
-                ref="name"
+                ref="phone"
                 v-model="form.phone"
                 class="appearance-none mb-4 bg-transparent border-solid border-b-2 border-blue-400  w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
                 type="text"
-                name="name"
-                placeholder="John Smith"
-                aria-label="Name"
+                name="pgone"
+                placeholder="02 111 222 333"
+                aria-label="phone"
               />
               
               <label class="mb-2">Query</label>
