@@ -214,9 +214,18 @@ export default class Home extends Vue {
     
     this.isSubmitted = true
     
-    if (!this.validEmail(this.form.email)) {
-      this.$refs.emailInput.focus();
+    if (!this.validEmail(this.form.email) ) {
+      this.$refs.emailInput.focus(); 
       return;
+    }
+    
+    if ( !this.isSignedUp ) {
+      this.form = {
+        email: '',
+        phone: '',
+        name: '',
+        query: ''
+      }
     }
 
     try {
