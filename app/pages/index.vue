@@ -43,16 +43,16 @@
           <div v-html="$md.render(welcomeText)" class="home__welcome markdown" />
 
           <div class="mb-12 xl:mb-0 w-full">
-            <h4 v-if="isSignedUp">Thank you - we'll be in touch shortly.</h4>
+            <h4 v-if="isSignedUp || isSubmitted">Thank you - we'll be in touch shortly.</h4>
 
             <form
               v-else
               @submit.prevent="handleSubmit"
               name="signups"
               data-netlify="true"
-              class="flex flex-col items-center border-solid border-b-2 border-blue-400 py-2"
+s              class="flex flex-col items-start border-solid border-b-2 border-blue-400 py-2"
             >
-              <label>Email Address</label>
+              <label class="mb-2">Email Address</label>
               <input
                 ref="emailInput"
                 v-model="form.email"
@@ -63,7 +63,7 @@
                 aria-label="Email address"
               />
 
-              <label>Name</label>
+              <label class="mb-2">Name</label>
               <input
                 ref="name"
                 v-model="form.name"
@@ -74,7 +74,7 @@
                 aria-label="Name"
               />
               
-              <label>Phone</label>
+              <label class="mb-2">Phone</label>
               <input
                 ref="name"
                 v-model="form.phone"
@@ -85,16 +85,16 @@
                 aria-label="Name"
               />
               
-              <label>Query</label>
+              <label class="mb-2">Query</label>
               <textarea
                 ref="name"
                 v-model="form.query"
-                class="appearance-none mb-36 bg-transparent border-solid border-2 border-blue-400  w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
+                class="appearance-none min-h-14 mb-36 bg-transparent border-solid border-2 border-blue-400  w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
                 name="query"
                 placeholder="I'd like help with ... "
                 aria-label="Query"
-              />
-
+              ></textarea>
+            
               
               <button
                 class="bg-gray-400 hover:bg-gray-300 hover:underline py-2 px-4 uppercase inline-block my-4"
@@ -188,7 +188,7 @@ export default class Home extends Vue {
   }
   
   
-
+  isSubmitted = false
   isSignedUp = false;
 
   form = {
@@ -211,6 +211,9 @@ export default class Home extends Vue {
   }
 
   async handleSubmit(): Promise<void> {
+    
+    this.isSubmitted = true
+    
     if (!this.validEmail(this.form.email)) {
       this.$refs.emailInput.focus();
       return;
