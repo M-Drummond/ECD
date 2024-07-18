@@ -219,15 +219,6 @@ export default class Home extends Vue {
       return;
     }
     
-    if ( !this.isSignedUp ) {
-      this.form = {
-        email: '',
-        phone: '',
-        name: '',
-        query: ''
-      }
-    }
-
     try {
       await fetch('/', {
         method: 'POST',
