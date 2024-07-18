@@ -43,6 +43,11 @@
           <div v-html="$md.render(welcomeText)" class="home__welcome markdown" />
 
           <div class="mb-12 xl:mb-0 w-full">
+            <pre>
+            isSignedUp : {{  isSignedUp  }}
+            isSubmitted : {{ isSubmitted }}
+            </pre>
+            
             <h4 v-if="isSignedUp">Thank you - we'll be in touch shortly.</h4>
             
             <form
@@ -50,7 +55,7 @@
               @submit.prevent="handleSubmit"
               name="signups"
               data-netlify="true"
-s              class="flex flex-col items-start border-solid border-b-2 border-blue-400 py-2"
+              class="flex flex-col items-start border-solid border-b-2 border-blue-400 py-2"
             >
               <label class="mb-2">Email Address</label>
               <input
