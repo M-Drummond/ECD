@@ -179,7 +179,7 @@ ul {
 }
 </style>
 
-<script lang="ts">
+<script lang="ts"> 
 import { Component, Vue } from 'nuxt-property-decorator';
 import settings from '@/content/settings/general.json';
 
@@ -221,6 +221,8 @@ export default class Home extends Vue {
     
     this.isSubmitted = true
     
+    console.log( this.isSubmitted )
+    
     if (!this.validEmail(this.form.email) ) {
       this.$refs.emailInput.focus(); 
       return;
@@ -233,8 +235,6 @@ export default class Home extends Vue {
         body: this.encode({ 'form-name': 'signups', ...this.form }),
       });
 
-
-      this.$refs.emailInput.value = ""
       this.formMessage = "Thank you for getting in touch."
       
     } catch (error) {
