@@ -52,6 +52,7 @@
               data-netlify="true"
               class="flex flex-col items-center border-solid border-b-2 border-blue-400 py-2"
             >
+              <label>Email Address</label>
               <input
                 ref="emailInput"
                 v-model="form.email"
@@ -62,9 +63,10 @@
                 aria-label="Email address"
               />
 
+              <label>Name</label>
               <input
                 ref="name"
-                v-model="form.email"
+                v-model="form.name"
                 class="appearance-none mb-4 bg-transparent border-solid border-b-2 border-blue-400  w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
                 type="text"
                 name="name"
@@ -72,9 +74,21 @@
                 aria-label="Name"
               />
               
+              <label>Phone</label>
+              <input
+                ref="name"
+                v-model="form.phone"
+                class="appearance-none mb-4 bg-transparent border-solid border-b-2 border-blue-400  w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
+                type="text"
+                name="name"
+                placeholder="John Smith"
+                aria-label="Name"
+              />
+              
+              <label>Query</label>
               <textarea
                 ref="name"
-                v-model="form.email"
+                v-model="form.query"
                 class="appearance-none mb-36 bg-transparent border-solid border-2 border-blue-400  w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
                 name="query"
                 placeholder="I'd like help with ... "
@@ -179,6 +193,9 @@ export default class Home extends Vue {
 
   form = {
     email: '',
+    phone: '',
+    name: '',
+    query: ''
   };
 
   encode(data): string {
