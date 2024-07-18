@@ -49,19 +49,39 @@
               v-else
               @submit.prevent="handleSubmit"
               name="signups"
-              netlify
-              class="flex items-center border-b border-b-2 border-blue-400 py-2"
+              data-netlify="true"
+              class="flex flex-col items-center border-solid border-b-2 border-blue-400 py-2"
             >
               <input
                 ref="emailInput"
                 v-model="form.email"
-                class="appearance-none mb-36 bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
+                class="appearance-none mb-4 bg-transparent border-solid border-b-2 border-blue-400  w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
                 type="text"
                 name="email"
                 placeholder="your@email.com"
                 aria-label="Email address"
               />
 
+              <input
+                ref="name"
+                v-model="form.email"
+                class="appearance-none mb-4 bg-transparent border-solid border-b-2 border-blue-400  w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
+                type="text"
+                name="name"
+                placeholder="John Smith"
+                aria-label="Name"
+              />
+              
+              <textarea
+                ref="name"
+                v-model="form.email"
+                class="appearance-none mb-36 bg-transparent border-solid border-2 border-blue-400  w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
+                name="query"
+                placeholder="I'd like help with ... "
+                aria-label="Query"
+              />
+
+              
               <button
                 class="bg-gray-400 hover:bg-gray-300 hover:underline py-2 px-4 uppercase inline-block my-4"
                 type="submit"
@@ -152,6 +172,8 @@ export default class Home extends Vue {
   get posts(): Post[] {
     return this.$store.state.posts;
   }
+  
+  
 
   isSignedUp = false;
 
