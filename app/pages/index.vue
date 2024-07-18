@@ -44,7 +44,7 @@
 
           <div class="mb-12 xl:mb-0 w-full">
             <h4 v-if="isSignedUp || isSubmitted">Thank you - we'll be in touch shortly.</h4>
-
+            
             <form
               v-else
               @submit.prevent="handleSubmit"
@@ -80,7 +80,7 @@ s              class="flex flex-col items-start border-solid border-b-2 border-b
                 v-model="form.phone"
                 class="appearance-none mb-4 bg-transparent border-solid border-b-2 border-blue-400  w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
                 type="text"
-                name="pgone"
+                name="phone"
                 placeholder="02 111 222 333"
                 aria-label="phone"
               />
@@ -102,6 +102,9 @@ s              class="flex flex-col items-start border-solid border-b-2 border-b
               >
                 Send
               </button>
+              
+              <p class="p-3 border-green-200" v-text="formMessage" v-if="isSignedUp"></p>
+              
             </form>
           </div>
         </div>
@@ -190,6 +193,8 @@ export default class Home extends Vue {
   
   isSubmitted = false
   isSignedUp = false;
+  
+  formMessage = ''
 
   form = {
     email: '',
@@ -218,7 +223,7 @@ export default class Home extends Vue {
       this.$refs.emailInput.focus(); 
       return;
     }
-    
+       
     try {
       await fetch('/', {
         method: 'POST',
@@ -228,14 +233,7 @@ export default class Home extends Vue {
 
       this.isSignedUp = true;
       
-      if ( this.isSignedUp ) {
-        this.form = {
-          email: '',
-          phone: '',
-          name: '',
-          query: ''
-        }
-      }
+      this.formMessage = "Thank you for getting in touch."
       
     } catch (error) {
       console.error(error);
