@@ -227,6 +227,16 @@ export default class Home extends Vue {
       });
 
       this.isSignedUp = true;
+      
+      if ( this.isSignedUp ) {
+        this.form = {
+          email: '',
+          phone: '',
+          name: '',
+          query: ''
+        }
+      }
+      
     } catch (error) {
       console.error(error);
     }
