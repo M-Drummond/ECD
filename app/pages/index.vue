@@ -185,7 +185,7 @@ ul {
 </style>
 
 <script lang="ts"> 
-import { Component, Vue } from 'nuxt-property-decorator';
+import { Component, Vue , ref  } from 'nuxt-property-decorator';
 import settings from '@/content/settings/general.json';
 
 export default class Home extends Vue {
@@ -196,10 +196,10 @@ export default class Home extends Vue {
   }
   
   
-  isSubmitted = false
-  isSignedUp = false;
+  isSubmitted = ref(false)
+  isSignedUp = ref(false);
   
-  formMessage = ''
+  formMessage = ref('')
 
   form = {
     email: '',
@@ -224,7 +224,7 @@ export default class Home extends Vue {
     
     console.log( this )
     
-    this.isSubmitted = true
+    this.isSubmitted.value = true
     
     console.log( this.isSubmitted )
     
