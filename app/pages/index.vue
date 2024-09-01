@@ -44,10 +44,6 @@
           <div v-html="$md.render(welcomeText)" class="home__welcome markdown" />
 
           <div class="mb-12 xl:mb-0 w-full">
-            <pre>
-            isSignedUp : {{  isSignedUp  }}
-            isSubmitted : {{ isSubmitted }}
-            </pre>
             
             <h4 v-if="isSignedUp">Thank you - we'll be in touch shortly.</h4>
             
@@ -187,7 +183,7 @@ ul {
 
 <script lang="ts"> 
 
-import { Component, Vue   } from 'nuxt-property-decorator';
+import { Component, Vue, ref  } from 'nuxt-property-decorator';
 import settings from '@/content/settings/general.json';
 
 export default class Home extends Vue {
