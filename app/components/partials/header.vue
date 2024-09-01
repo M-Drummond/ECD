@@ -1,41 +1,23 @@
 <template>
-  <header
-    style="background-color: #2c5282;"
-    class="flex items-center justify-center py-4 md:py-8 px-4 xl:px-0 bg-opacity-25 relative z-20 bg-blue-800 text-white w-screen"
-  >
-    <div class="header__logo pl-4 relative">
-      <nuxt-link
-        to="/"
-        class="flex flex-row space-x-4 reative py-4 group text-2xl font-black uppercase hover:underline"
-      >
-        <!-- <img
-          src="/images/uploads/irb-vector.svg"
-          alt="background image"
-          loading="lazy"
-          class="z-10 block w-8 h-8 mr-2 inset-0 opacity-10"
-          style="transform: scaleX(-1);"
-        /> -->
+  <header style="background-color: #2c5282;"
+    class="flex flex-col md:flex-row items-center justify-between w-full py-4 md:py-8 px-4 bg-opacity-25 relative z-20 bg-blue-800 text-white w-screen">
+    <div class="header__logo  relative">
+      <nuxt-link to="/"
+        class="flex flex-row space-x-4 reative py-4 group text-2xl font-black uppercase hover:underline">
         Eric Drummond Inflatable Boat Repair
       </nuxt-link>
     </div>
 
-    <!-- <nav class="nav ml-auto">
-      <ul class="flex flex-row items-center sm:mt-4 sm:pt-4 md:mt-0 md:pt-0 md:mr-4 lg:mr-8">
-        <li>
-          <nuxt-link to="/blog" class="block font-medium px-4 py-1 md:p-2 lg:px-4">
-            Blog
-          </nuxt-link>
-        </li>
+    <a class="inline-flex flex-row" href="tel:0412 829 262">
 
-        <li
-          v-for="(page, index) in pages"
-          :key="index"
-          class="block font-medium px-4 py-1 md:p-2 lg:px-4"
-        >
-          <nuxt-link :to="`/${page.slug}`">{{ page.title }}</nuxt-link>
-        </li>
-      </ul>
-    </nav> -->
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        class="size-4 mr-2">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+      </svg>
+
+
+      0412 829 262</a>
   </header>
 </template>
 
@@ -60,7 +42,7 @@ header {
 }
 
 .nav {
-  ul li > a {
+  ul li>a {
     &.nuxt-link-active {
       color: $bluise;
       @apply font-bold;
