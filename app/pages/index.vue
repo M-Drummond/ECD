@@ -181,7 +181,7 @@ ul {
 </style>
 
 <script lang="ts">
-import { Component, Vue } from 'nuxt-property-decorator';
+import { Component, Vue, ref  } from 'nuxt-property-decorator';
 import settings from '@/content/settings/general.json';
 
 export default class Home extends Vue {
