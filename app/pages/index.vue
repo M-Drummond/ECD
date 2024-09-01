@@ -44,6 +44,7 @@
           <div v-html="$md.render(welcomeText)" class="home__welcome markdown" />
 
           <div class="mb-12 xl:mb-0 w-full">
+            
             <h4 v-if="isSignedUp">Thank you - we'll be in touch shortly.</h4>
             
             <form
@@ -51,7 +52,7 @@
               @submit.prevent="handleSubmit"
               name="signups"
               data-netlify="true"
-s              class="flex flex-col items-start border-solid border-b-2 border-blue-400 py-2"
+              class="flex flex-col items-start border-solid border-b-2 border-blue-400 py-2"
             >
               <label class="mb-2">Email Address</label>
               <input
@@ -180,8 +181,9 @@ ul {
 }
 </style>
 
-<script lang="ts">
-import { Component, Vue } from 'nuxt-property-decorator';
+<script lang="ts"> 
+
+import { Component, Vue, ref  } from 'nuxt-property-decorator';
 import settings from '@/content/settings/general.json';
 
 export default class Home extends Vue {
@@ -192,10 +194,10 @@ export default class Home extends Vue {
   }
   
   
-  isSubmitted = false
-  isSignedUp = false;
+  isSubmitted = ref(false)
+  isSignedUp = ref(false);
   
-  formMessage = ''
+  formMessage = ref('')
 
   form = {
     email: '',
@@ -220,7 +222,9 @@ export default class Home extends Vue {
     
     console.log( this )
     
-    this.isSubmitted = true
+    this.isSubmitted.value = true
+    
+    console.log( this.isSubmitted )
     
     if (!this.validEmail(this.form.email) ) {
       this.$refs.emailInput.focus(); 
@@ -234,8 +238,6 @@ export default class Home extends Vue {
         body: this.encode({ 'form-name': 'signups', ...this.form }),
       });
 
-
-      this.$refs.emailInput.value = ""
       this.formMessage = "Thank you for getting in touch."
       
     } catch (error) {
