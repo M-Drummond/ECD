@@ -8,7 +8,7 @@
       </nuxt-link>
     </div>
 
-    <a class="inline-flex flex-row" href="tel:0412 829 262">
+    <a class="inline-flex flex-row phone" href="tel:0412 829 262">
 
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
         class="size-4 mr-2 w-4">
@@ -58,4 +58,9 @@ header {
 .header__logo:hover img {
   // opacity: 0.0125;
 }
+
+a.phone {
+  padding-right: 1rem;
+}
+
 </style>
