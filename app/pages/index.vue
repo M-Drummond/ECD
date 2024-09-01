@@ -20,6 +20,7 @@
             <li>Surf and Marine Rescue Craft</li>
             <li>All other inflatable products</li>
           </ul>
+          <p>Call On <a href='tel:0412 82 92 62'> 0412 82 92 62</a></p>
         </div>
         <div class="w-full flex flex-col items-center justify-center mb-8 md:mb-0">
           <img
